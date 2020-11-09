@@ -11,6 +11,8 @@ import { TodoService } from '../todo.service';
 export class TodoListComponent implements OnInit {
   todos:any[] = [];
   todo:any = {};
+  todoText:string;
+  p:number=1;
   todoToEdit:any = {};
   todoToDelete:any = {};
   fetchingData:boolean = false;
@@ -68,5 +70,15 @@ export class TodoListComponent implements OnInit {
                      this.todos = filteredTodos;
                    })
  }
+//  Search(){
+//  if(this.todoText == ""){
+//    this.ngOnInit();
+//  }
+//  else{
+//    this.todos=this.todos.filter(res=>{
+//      return res.todoText.toLocaleLowerCase().match(this.todoText.toLocaleLowerCase());
+//    })
+//  }
+//  }
 
 }

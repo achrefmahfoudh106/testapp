@@ -50,12 +50,12 @@ export class TodoService {
 
   private handleData(res: any) {
        let body = res.json();
-       console.log(body); // for development purposes only
+       console.log(body); 
        return body || {};
    }
 
  private handleError(error: any): Promise<any> {
-     console.error('An error occurred', error); // for development purposes only
+     console.error('An error occurred', error); 
      return Promise.reject(error.message || error);
  }
 

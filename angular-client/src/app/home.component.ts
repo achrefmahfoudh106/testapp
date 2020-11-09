@@ -14,7 +14,7 @@ export class HomePageComponent implements OnInit {
 
   ngOnInit(): void {
      this.todoService.getTodos()
-                     .then(todos => this.todos = todos.todos.reverse().slice(0,3))
+                     .then(todos => this.todos = todos.todos.reverse())
   }
 
 }
